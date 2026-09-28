@@ -1,34 +1,33 @@
-# Gradle files
-.gradle/
-build/
-
-# Local configuration file (sdk path, etc)
-local.properties
-
-# Log/OS Files
+# Archivos a ignorar en el repositorio de Git.
+node_modules/
+.expo/
+.expo-shared/
+dist/
+web-build/
 *.log
+.DS_Store
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
-
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
-
-# Keystore files
-*.jks
-*.keystore
-
-# Google Services (e.g. APIs or Firebase)
+# Secretos y configuración local. Nunca al repositorio (ver SECURITY.md).
+.env
+.env.*
+!.env.example
 google-services.json
+GoogleService-Info.plist
+*.keystore
+*.jks
+*.p8
+*.p12
+*.mobileprovision
+._*
 
-# Android Profiling
-*.hprof
+# El brief en docx se genera del markdown con pandoc y vive en Trello, no aca:
+# es un binario que ensucia los diffs y se desincroniza de su fuente.
+docs/*.docx
+
+# Scripts temporales para desarrollo y debugging
+scripts/temp/*.ts
+scripts-temp/
+debug-scripts/
+
+# Capturas de API para análisis (no versionar, contiene datos de producción)
+docs/api-captures/

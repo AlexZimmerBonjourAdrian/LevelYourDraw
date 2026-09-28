@@ -1,0 +1,9 @@
+{
+  "expo": {
+    "name": "LevelYourDraw",
+    "slug": "levelyourdraw",
+    "version": "0.1.0",
+    "plugins": ["expo-font", "expo-sharing"],
+    "android": { "package": "com.example.levelyourdraw" }
+  }
+}
