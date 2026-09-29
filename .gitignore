@@ -7,7 +7,7 @@ web-build/
 *.log
 .DS_Store
 
-# Secretos y configuración local. Nunca al repositorio (ver SECURITY.md).
+# Secretos y configuración local. Nunca al repositorio (ver docs/SECURITY.md).
 .env
 .env.*
 !.env.example

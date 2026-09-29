@@ -27,7 +27,7 @@ Competencia de referencia: **Wanna Draw** (publico de artistas). Diferencia: en 
 
 ## Estado y plan
 
-Ver PLAN.md: 3 semanas, 1 h/dia (21 h). Reglas tecnicas en CONSTITUTION.md, diseno en docs/DISENO.md.
+Ver docs/PLAN.md: 3 semanas, 1 h/dia (21 h). Reglas tecnicas en docs/CONSTITUTION.md, diseno en docs/DISENO.md. Indice general en docs/INDICE.md.
 
 
 

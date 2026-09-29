@@ -13,9 +13,11 @@
   `BRIEF.md` (ciclo de vida), `TABS.md` (funciones por tab).
 - Diseno: `DISENO.md` (tokens y componentes), `ESTILO.md` (tono visual),
   `SENSACION.md` (como se siente).
-- Tecnico: `MANEJO_ERRORES.md` (patron de errores).
+- Tecnico: `MANEJO_ERRORES.md` (patron de errores), `EXPO_CONFIG.md`,
+  `SECURITY.md`, `ENGINEERING.md`, `CONSTITUTION.md`.
+- Proceso: `PLAN.md` (hitos), `CLAUDE.md` (contexto IA).
 - Backlog: `PRO.md` (version paga, fuera de las 21 h).
-- Raiz: `CONSTITUTION.md`, `ENGINEERING.md`, `SECURITY.md`, `PLAN.md`, `README.md`.
+- Entrada: `../README.md` (vision general).
 
 ## Como evaluar (checklist)
 

@@ -16,7 +16,7 @@ Generador de briefs y retos de diseno de personajes (Android). Entrenador metodo
 ### S1 · Generador (7 h) — `en implementacion`
 Base ya existente: tabs Inicio/Galeria/Captura/Ajustes, UI kit, tokens, Inicio funcional. Falta:
 
-- [x] Mecanica cuatro datos documentada (`docs/CUATRO_DATOS.md`) + mazos JSON ES/EN (54/60/60/60, 11,6M combos)
+- [x] Mecanica cuatro datos documentada (`CUATRO_DATOS.md`) + mazos JSON ES/EN (54/60/60/60, 11,6M combos)
 - [x] Generador con descarte por sesion + toggle ES/EN + giro suave + nota de dominancia (hecho, verificado en codigo)
 - [ ] Historial de sesion + guardar favorito (2 h)
 - [ ] Persistencia local: ultimos briefs y favoritos (1 h)
@@ -32,7 +32,7 @@ Demostrable: 7 dias seguidos generan briefs sin repetir en sesion.
 > S2 no arranca.
 - [ ] Exportar card en PNG transparente (3 h)
 - [ ] Modo captura: foto + consigna como marca de agua/sticker (3 h)
-- [ ] Hoja de compartir + sticker posicionable (1 h, segun `docs/TABS.md` tab Captura)
+- [ ] Hoja de compartir + sticker posicionable (1 h, segun `TABS.md` tab Captura)
 
 Demostrable: PNG superpuesto en app de dibujo + foto con reto integrado.
 
@@ -43,7 +43,7 @@ Demostrable: PNG superpuesto en app de dibujo + foto con reto integrado.
 
 Demostrable: APK instalable con version visible.
 
-## Backlog pago (ver `docs/PRO.md`)
+## Backlog pago (ver `PRO.md`)
 
 Customizacion (mazos propios, fijar datos, baneos), boards tematicos con
 paleta, restricciones finas (tiempo, formato, tecnica), colecciones y

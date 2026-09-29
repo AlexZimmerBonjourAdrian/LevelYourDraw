@@ -4,7 +4,7 @@ App React Native con Expo: generador de briefs y retos de dibujo.
 
 ## Orden de lectura
 
-1. `CONSTITUTION.md` 2. `PLAN.md` 3. `docs/DISENO.md`.
+1. `CONSTITUTION.md` 2. `PLAN.md` 3. `DISENO.md`.
 
 ## Guardrails
 

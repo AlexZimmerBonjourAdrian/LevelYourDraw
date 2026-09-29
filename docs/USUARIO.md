@@ -39,5 +39,5 @@ comparacion social (n.5). Un problema, bien atacado.
 
 ESP + ENG desde el dia uno (apuesta internacional). Contenido de mazos y
 todas las cadenas de UI en ambos idiomas; nada hardcodeado en un solo idioma.
-Ver `docs/DISENO.md` (expansion de texto).
+Ver `DISENO.md` (expansion de texto).
 

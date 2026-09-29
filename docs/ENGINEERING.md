@@ -2,7 +2,7 @@
 
 ## 1. Lectura obligatoria
 
-1. `CONSTITUTION.md` 2. `PLAN.md` 3. `docs/DISENO.md`.
+1. `CONSTITUTION.md` 2. `PLAN.md` 3. `DISENO.md`.
 
 ## 2. Cambios
 
@@ -17,5 +17,5 @@
 
 ## 4. Diseno
 
-- Los valores numericos se copian del sistema de diseno. Ver `docs/DISENO.md`.
+- Los valores numericos se copian del sistema de diseno. Ver `DISENO.md`.
 - Si el diseno contradice los datos disponibles, se reporta y se corrige el documento antes que el codigo.
