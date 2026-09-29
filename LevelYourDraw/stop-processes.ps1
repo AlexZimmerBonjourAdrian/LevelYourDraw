@@ -3,7 +3,7 @@
 Write-Host "=== Deteniendo todos los procesos activos ===" -ForegroundColor Cyan
 Write-Host ""
 
-cd ". (raiz del proyecto)"
+Set-Location $PSScriptRoot
 
 # Detener procesos de Node
 Write-Host "Deteniendo procesos de Node..." -ForegroundColor Yellow
@@ -42,3 +42,4 @@ Write-Host "Puertos liberados" -ForegroundColor Green
 
 Write-Host ""
 Write-Host "=== Limpieza completada ===" -ForegroundColor Green
+

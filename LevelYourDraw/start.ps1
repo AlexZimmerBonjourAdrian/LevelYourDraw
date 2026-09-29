@@ -1,6 +1,6 @@
 $env:NODE_ENV = "development"
 
-cd ". (raiz del proyecto)"
+Set-Location $PSScriptRoot
 
 Write-Host "Iniciando servidor de desarrollo de Expo..." -ForegroundColor Cyan
 Write-Host "Opciones disponibles:" -ForegroundColor Yellow
@@ -16,3 +16,4 @@ Write-Host "Get-Content .expo\dev\logs\start.log -Wait -Tail 20" -ForegroundColo
 Write-Host ""
 
 & npx expo start
+

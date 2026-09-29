@@ -3,7 +3,35 @@
     "name": "LevelYourDraw",
     "slug": "levelyourdraw",
     "version": "0.1.0",
-    "plugins": ["expo-font", "expo-sharing"],
-    "android": { "package": "com.example.levelyourdraw" }
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      "expo-font"
+    ],
+    "android": {
+      "package": "com.example.levelyourdraw",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ccdf40cc-bc32-4368-b54d-b97cba9da8bc"
+      }
+    }
   }
 }

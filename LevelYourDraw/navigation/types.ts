@@ -8,5 +8,7 @@ export type RootStackParamList = {
 export type MainTabParamList = {
   Inicio: undefined;
   Galeria: undefined;
+  Captura: undefined;
   Ajustes: undefined;
 };
+

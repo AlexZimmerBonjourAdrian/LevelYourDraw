@@ -1,22 +1,50 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useRef } from 'react';
+import es from '../data/cuatro_datos.es.json';
+import en from '../data/cuatro_datos.en.json';
 
-export interface Brief {
-  id: string;
-  titulo: string;
-  consigna: string;
-  categoria: string;
+export type Idioma = 'es' | 'en';
+export interface CuatroDatos {
+  rol: string;
+  profesion: string;
+  profesionSecundaria: string | null;
+  interno: string;
+  externo: string;
 }
 
-const SUGERENCIAS: Brief[] = [
-  { id: '1', titulo: 'Cuatro datos', consigna: 'Define rol, epoca, rasgo y limite en una frase.', categoria: 'metodo' },
-  { id: '2', titulo: 'Brief narrativo', consigna: 'Escribe que quiere, que teme y que oculta.', categoria: 'narrativa' },
-  { id: '3', titulo: 'Estudio de estilo', consigna: 'Tres variantes de silueta con la misma paleta.', categoria: 'estilo' },
-];
+const MAZOS = { es, en };
 
-export function useBriefAleatorio() {
-  const [brief, setBrief] = useState<Brief>(SUGERENCIAS[0]);
+function alAzar<T>(lista: T[]): T {
+  return lista[Math.floor(Math.random() * lista.length)];
+}
+
+function generarCombo(idioma: Idioma): CuatroDatos {
+  const mazo = MAZOS[idioma];
+  const segunda = Math.random() < 0.25 ? alAzar(mazo.profesion) : null;
+  return {
+    rol: alAzar(mazo.rol),
+    profesion: alAzar(mazo.profesion),
+    profesionSecundaria: segunda === null ? null : segunda,
+    interno: alAzar(mazo.interno),
+    externo: alAzar(mazo.externo),
+  };
+}
+
+function clave(c: CuatroDatos): string {
+  return [c.rol, c.profesion, c.profesionSecundaria, c.interno, c.externo].join('|');
+}
+
+export function useCuatroDatos(idioma: Idioma = 'es') {
+  const [brief, setBrief] = useState<CuatroDatos>(() => generarCombo(idioma));
+  const usados = useRef<Set<string>>(new Set());
   const generar = useCallback(() => {
-    setBrief(SUGERENCIAS[Math.floor(Math.random() * SUGERENCIAS.length)]);
-  }, []);
+    let siguiente = generarCombo(idioma);
+    let intentos = 0;
+    while (usados.current.has(clave(siguiente)) && intentos < 20) {
+      siguiente = generarCombo(idioma);
+      intentos += 1;
+    }
+    usados.current.add(clave(siguiente));
+    setBrief(siguiente);
+  }, [idioma]);
   return { brief, generar };
 }

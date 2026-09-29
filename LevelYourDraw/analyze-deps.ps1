@@ -3,7 +3,7 @@
 Write-Host "=== Análisis de Dependencias ===" -ForegroundColor Cyan
 Write-Host ""
 
-cd ". (raiz del proyecto)"
+Set-Location $PSScriptRoot
 
 # Función para mostrar dependencias de producción
 function Show-ProductionDeps {
@@ -166,3 +166,4 @@ switch ($opcion) {
 Write-Host ""
 Write-Host "Presiona Enter para salir..."
 Read-Host
+

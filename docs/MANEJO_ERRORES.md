@@ -4,7 +4,7 @@
 
 1. Se muestra lo que dijo el servidor, textual, con identificador unico. Nunca generico.
 2. Logs de red solo en desarrollo (`__DEV__`). En entrega van apagados.
-3. Ningun dato fiscal o critico se completa con un valor por defecto: si falta, se corta y se avisa.
+3. Ningun dato critico se completa con un valor por defecto: si falta, se corta y se avisa.
 4. La app calcula para mostrar; el servidor decide. Si difieren, manda el servidor y se reporta.
 
 ## Patron de cliente (logica reutilizada, nombres neutros)
@@ -17,3 +17,4 @@
 
 - Mensaje textual en monoespaciada + boton reintentar. Sin emojis.
 - Try-catch en conversiones criticas (fechas, importes). Si un filtro falla, se registra y se continua sin romper.
+

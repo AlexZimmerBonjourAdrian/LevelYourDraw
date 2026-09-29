@@ -31,3 +31,6 @@ debug-scripts/
 
 # Capturas de API para análisis (no versionar, contiene datos de producción)
 docs/api-captures/
+
+# Expo - estado local
+.expo/

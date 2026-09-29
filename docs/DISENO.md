@@ -30,3 +30,8 @@ Conservado de la purga. Sin APIs oficiales, sin testing.
 
 - Tabs: Inicio / Galeria / Ajustes. Pantallas apiladas sin barra cuando corresponda.
 - Una sola puerta de red (cliente unico). Ninguna pantalla llama por su cuenta.
+
+## Texto bilingue
+
+- Toda cadena por clave, nunca literal en pantalla. Expansion ES->EN +-30%: los layouts (cards, chips) no fijan ancho de texto.
+

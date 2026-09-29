@@ -1,4 +1,4 @@
-﻿# LevelYourDraw — Asistente de ideacion y desafios para disenadores de personajes
+# LevelYourDraw — Asistente de ideacion y desafios para disenadores de personajes
 
 Generador de briefs y retos de diseño de personajes para Android. Supera el bloqueo creativo diario con metodologías de la industria: los 4 datos, briefs narrativos y estudio de estilo. Exporta tus consignas en PNG transparente para superponer en tu lienzo o captura fotos con el reto integrado para compartir a diario tu proceso en redes sociales.
 
@@ -28,5 +28,6 @@ Competencia de referencia: **Wanna Draw** (publico de artistas). Diferencia: en 
 ## Estado y plan
 
 Ver PLAN.md: 3 semanas, 1 h/dia (21 h). Reglas tecnicas en CONSTITUTION.md, diseno en docs/DISENO.md.
+
 
 

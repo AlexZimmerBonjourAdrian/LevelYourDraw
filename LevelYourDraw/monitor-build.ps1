@@ -3,7 +3,7 @@
 Write-Host "=== Monitor de Builds EAS ===" -ForegroundColor Cyan
 Write-Host ""
 
-cd ". (raiz del proyecto)"
+Set-Location $PSScriptRoot
 
 # Función para mostrar builds recientes
 function Show-RecentBuilds {
@@ -186,3 +186,4 @@ switch ($opcion) {
 Write-Host ""
 Write-Host "Presiona Enter para salir..."
 Read-Host
+

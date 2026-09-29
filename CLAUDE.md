@@ -17,4 +17,5 @@ App React Native con Expo: generador de briefs y retos de dibujo.
 - Importes como cadena decimal, aritmetica en centesimos.
 - Busquedas en servidor. Catalogos desde backend.
 - Errores textuales del servidor, nunca genericos.
-- Diseno copiado, no redondeado. Development build, nunca Expo Go.
+- Diseno copiado, no redondeado. Compatible con Expo Go.
+

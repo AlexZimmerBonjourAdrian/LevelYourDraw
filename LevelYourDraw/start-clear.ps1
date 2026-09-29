@@ -1,6 +1,6 @@
 $env:NODE_ENV = "development"
 
-cd ". (raiz del proyecto)"
+Set-Location $PSScriptRoot
 
 Write-Host "=== Limpiando cache de Metro y reiniciando servidor ===" -ForegroundColor Cyan
 Write-Host ""
@@ -40,4 +40,5 @@ Write-Host "Presiona Ctrl+C para detener el servidor" -ForegroundColor Gray
 Write-Host ""
 
 & npx expo start --clear
+
 

@@ -10,7 +10,7 @@ Decisiones permanentes de la app. Toda IA las carga antes de generar codigo.
 
 ## Arquitectura
 
-- React Native con Expo, development build. Nunca Expo Go.
+- React Native con Expo, compatible con Expo Go (sin dev-client ni modulos nativos fuera del SDK). El build de entrega se define en S3.
 - Capas: pantallas (sin logica) -> `features/` (casos de uso) -> servicios (`export/`, `camera/`). Componentes en `components/`, tokens en modulo unico.
 - Configuracion (endpoint opcional, banderas) por variable de entorno. Nunca hardcodeada.
 - Solo se persiste en dispositivo: preferencias, galeria de retos y ultimos briefs. Nada mas.
@@ -33,6 +33,7 @@ Decisiones permanentes de la app. Toda IA las carga antes de generar codigo.
 - `main` solo via Pull Request. Commits `tipo: descripcion`, minuscula e imperativo.
 - Ningun agente hace `commit` ni `push` sin orden explicita.
 - Pie de version obligatorio en todo build (version, fecha, hash).
+
 
 
 
